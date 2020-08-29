@@ -66,9 +66,16 @@ body {
   flex: 0 1 0;
   align-self: flex-start;
 }
-.cards-childe:before:last-child {
-  transition: 3s;
-  font-size: 130px;
+.cards-childe:last-child {
+  padding-left: 70px;
+  transition: 1s;
+  /* margin-top: 10px; */
+  font-size: 150px;
+  /* left: 13%; */
+  /* bottom: 10%; */
+  /* top: 80%; */
+  /* transform: translate(-60%, 30%); */
+  padding-top: 50px;
 }
 
 .cards {
@@ -84,6 +91,7 @@ body {
   position: relative;
   width: 100px;
   height: 80px;
+  font-size: 66px;
   /* border: 1px solid black; */
   flex: none;
   cursor: pointer;
@@ -92,12 +100,13 @@ body {
   transition-duration: 0.4s;
 }
 .cards-childe {
+  font-size: 90px;
   margin: 15px;
 }
 .cards-child:before,
 .cards-childe:before {
   content: attr(data-content);
-  font-size: 66px;
+
   color: #797979;
   position: absolute;
   font-weight: bold;
@@ -107,7 +116,6 @@ body {
 }
 .cards-childe:before {
   color: #00982f;
-  font-size: 90px;
 }
 
 .cards-child:hover,

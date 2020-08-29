@@ -15,7 +15,7 @@ function createElementsInside(done) {
 
   setTimeout(() => {
     el.classList.remove("visible");
-  }, 500);
+  }, 100);
 }
 
 const handler = function () {
